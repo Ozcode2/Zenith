@@ -1,0 +1,144 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+.fluid-container {
+    background: linear-gradient(90deg, rgba(72, 160, 107, 1) 18%, rgba(161, 255, 199, 1) 99%);
+    height: 120vh;
+    width: 100%;
+    position: relative;
+}
+
+.rounded{
+    position: absolute;
+    top: 3vh;
+    left: 45%;
+    width: 5%;
+}
+
+.fluid-container .card{
+    width: 40%;
+    height: 95vh;
+    text-align: center;
+    position: relative;
+    left: 28%;
+    top: 22vh;
+    border-radius: 8px;
+}
+
+.card .card-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card .sub-title{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.card-footer{
+    margin-top: 10vh;
+}
+
+#font{
+    color: #6c757d;
+    font-weight: 500;
+}
+
+label{
+    color: #a39f9f;
+    font-weight: 500;
+    float: left;
+    font-size: 14px;
+    letter-spacing: 0.02px;
+}
+
+.form-control.is-valid {
+    border-color: #b00200 !important;
+}
+
+#form{
+    margin-top: 7vh;
+    line-height: 3;   
+}
+
+.card .btn{
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.2s, color 0.2s;
+    margin-top: 10vh;
+    background-color: orange;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    height: 9vh;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    opacity: 0;
+    transition: left 0.5s, opacity 0.5s;
+}
+
+.btn:hover {
+    background-color: #48A06B;
+    color: white;
+}
+
+.btn:hover::before {
+    left: 100%;
+    opacity: 1;
+}
+
+.card-footer a:hover{
+    text-decoration: none;
+}
+
+#user_email::placeholder {
+    color: #bfb8b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#user_password::placeholder {
+    color: #bfb8b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.card-footer a{
+    margin-left: 2%;
+    color: brown;
+    font-weight: 350;
+}
+
+@media (min-width: 250px) and (max-width: 1000px){
+
+.fluid-container .card{
+    width: 100%;
+    position: absolute;
+    left: 0%;
+}
+
+.fluid-container {
+    background: linear-gradient(90deg, rgba(72, 160, 107, 1) 18%, rgba(161, 255, 199, 1) 99%);
+    height: 130vh;
+    width: 100%;
+    position: relative;
+}
+
+.rounded{
+    position: absolute;
+    top: 10vh;
+    left: 45%;
+    width: 15%;
+}
+}

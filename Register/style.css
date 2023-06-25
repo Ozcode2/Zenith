@@ -1,0 +1,223 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.fluid-container {
+    background: linear-gradient(90deg, rgba(72, 160, 107, 1) 18%, rgba(161, 255, 199, 1) 99%);
+    height: 180vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.rounded {
+    position: absolute;
+    top: 3vh;
+    left: 45%;
+    width: 5%;
+}
+
+.fluid-container .card {
+    width: 50%;
+    height: 140vh;
+    text-align: center;
+    position: relative;
+    left: 25%;
+    top: 22vh;
+    border-radius: 8px;
+    display: flex;
+    flex: 1;
+}
+
+.card .card-title {
+    font-size: 25px;
+    font-weight: 600;
+    color: green;
+    margin-right: 8%;
+}
+
+#form{
+    margin-top: 10vh;
+    line-height: 3;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#user_email::placeholder {
+    color: #bfb8b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#username::placeholder {
+    color: #bfb8b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#user_phone::placeholder {
+    color: #bfb8b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#user_password::placeholder {
+    color: #bfb8b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#confirm_password::placeholder {
+    color: #bfb8b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+label{
+    color: #a39f9f;
+    font-weight: 500;
+    float: left;
+    font-size: 14px;
+    letter-spacing: 0.02px;
+}
+
+.form-check  #exampleCheck1{
+    height: 4vh;
+    width: 5%;
+    right: 90%;
+    cursor: pointer;
+   
+}
+
+#font{
+    margin-left: 10%;
+    margin-top: 2vh;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card .btn {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.2s, color 0.2s;
+    top: 10vh;
+    background-color: orange;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    height: 9vh;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    opacity: 0;
+    transition: left 0.5s, opacity 0.5s;
+}
+
+.btn:hover {
+    background-color: #48A06B;
+    color: white;
+}
+
+.btn:hover::before {
+    left: 100%;
+    opacity: 1;
+}
+
+.card-footer {
+    margin-top: 10vh;
+}
+
+#text{
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.card-footer a:hover {
+    text-decoration: none;
+}
+
+.card-footer a {
+    margin-left: 2%;
+    color: brown;
+    font-weight: 350;
+}
+
+#error{
+    color: brown;
+    font-size: 12px;
+}
+
+#invalid{
+    color: brown;
+    font-size: 12px;
+}
+
+#message{
+    color: brown;
+    font-size: 12px;
+    line-height: normal;
+}
+
+#errorText{
+    color: brown;
+    font-size: 12px;
+}
+
+
+@media (min-width: 280px) and (max-width: 1200px) {
+
+    /* .fluid-container .card{
+        width: 100%;
+        position: absolute;
+        left: 0%;
+        height: 160vh;
+        margin-top: 30vh;
+    } */
+
+    .fluid-container {
+        background: linear-gradient(90deg, rgba(72, 160, 107, 1) 18%, rgba(161, 255, 199, 1) 99%);
+        height: 210vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .rounded {
+        position: absolute;
+        top: 3vh;
+        left: 43%;
+        width: 50px;
+    }
+
+    /* .form-check #exampleCheck1 {
+        width: 15%;
+        height: 6vh;
+    } */
+
+    
+}
+
+@media (max-width: 450px){
+    .form-check #exampleCheck1 {
+        width: 15%;
+        height: 6vh;
+    }
+
+}
+
+@media (max-width: 700px){
+    .fluid-container .card{
+        width: 80%;
+        margin-left: -15%;
+        height: 160vh;
+    }
+}
+
